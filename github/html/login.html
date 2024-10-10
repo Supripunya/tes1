@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MasakDlu</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html" class="active">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <section class="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                
+                <input type="submit" value="Login">
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - MasakDlu</title>
+    <link rel="stylesheet" href="../css/styledetailresep.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html"class="active">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <div class="image-food">
+            <img src="../img/sushi.jpeg" alt="image-food" >
+            <div class="recipe-card" data-title="Sushi">
+                <h3>Sushi</h3>
+                <p>
+                    <div>
+                        <h4>Bahan-bahan</h4>
+                        2 cangkir nasi sushi (nasi jepang)<br>
+                        2 1/2 cangkir air<br>
+                        1/2 cangkir cuka beras<br>                    
+                        2 sendok makan gula<br>                 
+                        1 sendok teh garam<br>                 
+                        Nori (lembaran rumput laut kering)<br>                  
+                        1 buah alpukat, iris tipis<br>                   
+                        1 buah mentimun, iris tipis<br>                   
+                        200 gram daging kepiting imitasi atau asli, suwir-suwir<br>                    
+                        Mayones (opsional)<br>                    
+                        Bijan (opsional)<br>         
+                    </div>          
+                    <h4>Instruksi</h4>
+                    1. <b>Masak Nasi:</b> Bilas nasi sushi hingga airnya jernih. Masak nasi dengan air dalam rice cooker atau panci hingga matang. Biarkan sedikit mendingin.<br>                   
+                    2. <b>Buat Campuran Cuka:</b> Dalam panci kecil, campurkan cuka beras, gula, dan garam. Panaskan dengan api kecil hingga gula dan garam larut. Jangan sampai mendidih.<br>                  
+                    3. <b>Campur dengan Nasi:</b> Tuangkan campuran cuka ke nasi sushi yang sudah agak dingin. Aduk perlahan hingga merata.<br>                    
+                    4. <b>Siapkan Nori:</b> Letakkan lembaran nori di atas tikar bambu (makisu). Ratakan nasi di atas nori dengan tangan yang sudah dibasahi air agar tidak lengket.<br>                    
+                    5. <b> Tambah Isian:</b> Letakkan irisan alpukat, mentimun, dan daging kepiting di bagian tengah nasi. Tambahkan mayones jika diinginkan.<br>                  
+                    6. <b>Gulung Sushi:</b> Gunakan tikar bambu untuk menggulung nori dan isian menjadi gulungan yang rapat. Tekan perlahan agar padat.<br>                   
+                    7. <b>Potong dan Sajikan:</b> Gunakan pisau tajam yang dibasahi air untuk memotong gulungan menjadi beberapa potongan sushi. Taburi bijan di atasnya jika diinginkan.<br>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

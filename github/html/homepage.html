@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasakDlu</title>
+    <link rel="stylesheet" href="../css/stylehomepage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <section class="intro">
+            <h2>Welcome to MasakDlu</h2>
+            <p>Search More - Cook More - Eat More</p>
+            <h2>Featured Recipes</h2>
+        </section>
+        <section class="recipes">
+            <div class="recipe-card">
+                <h3>Pasta Carbonara</h3>
+                <p>Pasta dengan saus creamy yang terbuat dari telur, keju Parmesan, pancetta, dan lada hitam.</p>
+                <a href="spagetti.html">
+                    <button>Lihat Resep</button>
+                </a>
+            </div>
+            <div class="recipe-card">
+                <h3>Sushi</h3>
+                <p>Ikan mentah segar yang disajikan dengan nasi sushi yang dibumbui.</p>
+                <a href="sushi.html">
+                    <button>Lihat Resep</button>
+                </a>
+            </div> 
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

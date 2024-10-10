@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - MasakDlu</title>
+    <link rel="stylesheet" href="../css/halaman resep.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html" class="active">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <section class="search-bar">
+            <input type="text" id="searchInput" onkeyup="searchRecipes()" placeholder="Search for recipes...">
+        </section>
+        <div>
+            <section class="recipe-list">
+                <h2>Our Favorite Recipes</h2>
+                <div class="recipe-card" data-title="Pasta Carbonara">
+                    <h3>Pasta Carbonara</h3>
+                    <p>Pasta dengan saus creamy yang terbuat dari telur, keju Parmesan, pancetta, dan lada hitam.</p>
+                    <a href="spagetti.html">
+                        <button onclick="showRecipe('spagetti')">Lihat Resep</button>
+                    </a>
+                </div>
+                <div class="recipe-card" data-title="sushi">
+                    <h3>Sushi</h3>
+                    <p>Ikan mentah segar yang disajikan dengan nasi sushi yang dibumbui.</p>
+                    <a href="sushi.html">
+                        <button onclick="GoToPage('sushi')">Lihat Resep</button>
+                    </a>
+                    </div>
+                <div class="recipe-card" data-title="paella">
+                    <h3>paella</h3>
+                    <p> Hidangan nasi dengan saffron yang diisi dengan berbagai jenis seafood, ayam, dan sayuran.</p>
+                    <a href="paella.html">
+                        <button onclick="GoToPage('paella')">Lihat Resep</button>
+                    </a>
+                    </div>
+                <div class="recipe-card" data-title="Tacos">
+                    <h3>Tacos</h3>
+                    <p>Tortilla jagung atau gandum yang diisi dengan berbagai isian seperti daging, keju, dan sayuran.</p>
+                    <a href="Tacos.html">
+                        <button onclick="GoToPage('tacos')">Lihat Resep</button>
+                    </a>
+                    </div>
+                 <div class="recipe-card" data-title="Biryani">
+                    <h3>Biryani</h3>
+                    <p>Nasi berbumbu yang dimasak dengan daging, ikan, telur, atau sayuran.</p>
+                    <a href="biryani.html">
+                        <button onclick="GoToPage('biryani')">Lihat Resep</button>
+                    </a>
+                    </div>
+                <div class="recipe-card" data-title="Dim Sum">
+                    <h3>Dim Sum</h3>
+                    <p>Berbagai jenis makanan kecil seperti dumpling dan roti yang dikukus atau digoreng.</p>
+                    <a href="Dimsum.html">
+                        <button onclick="GoToPage('dimsum')">Lihat Resep</button>
+                    </a>
+                    </div>
+                <div class="recipe-card" data-title="Falafel">
+                    <h3>Falafel</h3>
+                    <p>Bola-bola goreng yang terbuat dari kacang chickpea atau fava yang sering disajikan dalam roti pita.</p>
+                    <a href="Falafel.html">
+                        <button onclick="GoToPage('Falafel')">Lihat Resep</button>
+                    </a>
+                    </div>
+                <div class="recipe-card" data-title="Poutine">
+                    <h3>Poutine</h3>
+                    <p>Kentang goreng yang dilengkapi dengan keju curd dan saus gravy yang lezat.</p>
+                    <a href="poutine.html">
+                        <button onclick="GoToPage('Poutine')">Lihat Resep</button>
+                    </a>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+    <script src="halamanresep.js"></script>
+    <script>
+        function searchRecipes() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.recipe-card');
+
+    cards.forEach(card => {
+        const title = card.getAttribute('data-title').toLowerCase();
+        if (title.includes(input)) {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+    </script>
+</body>
+</html>

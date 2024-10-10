@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - MasakDlu</title>
+    <link rel="stylesheet" href="../css/styledetailresep.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html" class="active">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <div class="image-food">
+            <img src="../img/falafel.jpeg" alt="image-food" >
+            <div class="recipe-card" data-title="Falafel">
+                <h3>Falafel</h3>
+                <p>
+                    <h4>Bahan-bahan</h4>
+                    2 cangkir kacang chickpea kering (rendam dalam air semalaman)<br>
+                    1 bawang bombay kecil, cincang halus<br>
+                    3 siung bawang putih, cincang<br>
+                    1/4 cangkir daun peterseli segar, cincang<br>
+                    1/4 cangkir daun ketumbar segar, cincang<br>
+                    1 sendok teh bubuk jintan<br>
+                    1 sendok teh bubuk ketumbar<br>
+                    1/2 sendok teh bubuk cabai merah (opsional)<br>
+                    1 sendok teh garam<br>
+                    1/2 sendok teh baking powder<br>
+                    2 sendok makan tepung terigu<br>
+                    Minyak untuk menggoreng<br>
+                    <h4>Instruksi</h4>
+                    1. <b>Siapkan Kacang Chickpea:</b> Tiriskan kacang chickpea yang sudah direndam semalaman dan bilas dengan air bersih. Tiriskan dengan baik.<br>                        
+                    2. <b>Buat Campuran Falafel:</b> Masukkan kacang chickpea, bawang bombay, bawang putih, peterseli, ketumbar, jintan, ketumbar bubuk, bubuk cabai merah, dan garam ke dalam food processor. Proses hingga halus, tetapi tetap ada sedikit tekstur. Tambahkan baking powder dan tepung terigu, aduk hingga merata.<br>
+                    3. <b>Bentuk Bola-bola Falafel:</b> Ambil sekitar 1 sendok makan campuran falafel dan bentuk menjadi bola-bola kecil atau bentuk pipih sesuai selera.<br>
+                    4. <b>Panaskan Minyak:</b> Panaskan minyak dalam wajan besar dengan api sedang-tinggi. Pastikan minyak cukup banyak agar falafel bisa terendam saat digoreng.<br>
+                    5. <b>Goreng Falafel:</b> Masukkan bola-bola falafel ke dalam minyak panas dan goreng hingga kecokelatan dan renyah, sekitar 3-4 menit per sisi. Tiriskan falafel di atas kertas tisu untuk menghilangkan kelebihan minyak.<br>
+                    6. <b>Sajikan:</b> Sajikan falafel hangat dengan roti pita, salad, saus tahini, atau saus yogurt.<br>
+                </p>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

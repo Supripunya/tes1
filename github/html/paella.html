@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - MasakDlu</title>
+    <link rel="stylesheet" href="../css/styledetailresep.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html"class="active">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <div class="image-food">
+            <img src="../img/paella.jpeg" alt="image-food" >
+            <div class="recipe-card" data-title="paella">
+                <h3>paella</h3>
+                <p>
+                    <h4>Bahan-bahan</h4>
+                    2 cangkir nasi paella (atau nasi arborio)<br>
+                    4 cangkir kaldu ayam, dipanaskan<br>                   
+                    1/4 cangkir minyak zaitun<br>                   
+                    1 bawang bombay, cincang halus<br>                   
+                    3 siung bawang putih, cincang halus<br>                   
+                    1 paprika merah, diiris tipis<br>                   
+                    1 paprika hijau, diiris tipis<br>                   
+                    2 tomat besar, diparut<br>                   
+                    1 sendok teh paprika asap (smoked paprika)<br>                   
+                    1/2 sendok teh kunyit (atau sejumput saffron)<br>                   
+                    1/2 cangkir kacang polong beku<br>                   
+                    200 gram udang, dikupas dan dibersihkan<br>                  
+                    200 gram kerang, dicuci bersih<br>                  
+                    200 gram ayam, potong dadu kecil<br>                  
+                    1 buah lemon, dipotong menjadi irisan<br>                 
+                    Peterseli segar untuk hiasan<br>              
+                    Garam dan merica secukupnya<br>
+                    <h4>Instruksi</h4>
+                    1. <b>Persiapkan Semua Bahan:</b> Pastikan semua bahan sudah siap sebelum memulai, karena paella memerlukan perhatian terus-menerus saat dimasak.<br> 
+                    2. <b>Masak Ayam dan Udang:</b> Panaskan minyak zaitun di dalam wajan paella atau wajan besar. Masak ayam hingga berubah warna, angkat dan sisihkan. Tambahkan udang dan masak hingga berubah warna, angkat dan sisihkan.<br> 
+                    3. <b>Tumis Sayuran:</b> Tambahkan bawang bombay, bawang putih, dan paprika ke dalam wajan. Tumis hingga lembut dan harum.<br> 
+                    4. <b>Tambahkan Tomat dan Bumbu:</b> Tambahkan tomat parut, paprika asap, dan kunyit. Masak hingga tomat berubah menjadi saus yang kental.<br> 
+                    5. <b>Masak Nasi:</b> Tambahkan nasi ke dalam wajan dan aduk hingga tercampur dengan saus. Ratakan nasi di dalam wajan.<br> 
+                    6. <b>Tambahkan Kaldu:</b> Tuangkan kaldu ayam panas secara perlahan ke dalam wajan. Jangan diaduk. Biarkan nasi masak selama 15-20 menit hingga hampir semua cairan terserap.<br> 
+                    7. <b>Tambahkan Kacang Polong, Ayam, dan Udang:</b> Sebar kacang polong, ayam, udang, dan kerang di atas nasi. Tutup wajan dengan foil atau penutup. Masak lagi selama 10-15 menit hingga semua bahan matang dan kerang terbuka.<br> 
+                    8. <b>Sajikan:</b> Setelah matang, angkat dari api dan biarkan paella istirahat selama beberapa menit. Hiasi dengan irisan lemon dan peterseli segar sebelum disajikan.<br> 
+                </p>
+            </div>
+        </div>  
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

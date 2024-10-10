@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - MasakDlu</title>
+    <link rel="stylesheet" href="../css/styledetailresep.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html"class="active">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <div class="image-food">
+            <img src="../img/poutine.jpg" alt="image-food" >
+            <div class="recipe-card" data-title="Falafel">
+                <h3>Poutine</h3>
+                <p>
+                    <h4>Bahan-bahan</h4>
+                    Bahan-bahan:<br>
+                    4-5 kentang besar, potong menjadi kentang goreng<br>
+                    1 1/2 cangkir keju curd<br>
+                    Minyak untuk menggoreng<br>
+                    Untuk kuah (gravy):<br>
+                    1/4 cangkir mentega<br>
+                    1/4 cangkir tepung serbaguna<br>
+                    2 cangkir kaldu sapi<br>
+                    1 cangkir kaldu ayam<br>
+                    Garam dan lada hitam secukupnya<br>
+                    <h4>Instruksi</h4>
+                    1. <b>Goreng Kentang:</b> Panaskan minyak dalam wajan besar atau penggorengan hingga mencapai suhu sekitar 175°C (350°F). Goreng kentang dalam minyak panas hingga kecokelatan dan renyah. Tiriskan di atas kertas tisu untuk menghilangkan kelebihan minyak.<br>
+                    2. <b>Buat Kuah (Gravy):</b> Dalam panci, lelehkan mentega di atas api sedang. Tambahkan tepung dan aduk hingga tercampur rata dan membentuk pasta (roux). Masak selama sekitar 2-3 menit.<br>
+                    3. <b>Tambahkan Kaldu:</b> Perlahan tuangkan kaldu sapi dan kaldu ayam sambil terus diaduk. Masak hingga kuah mengental, sekitar 5-7 menit. Bumbui dengan garam dan lada hitam sesuai selera.<br>
+                    4. <b>Rakit Poutine:</b> Tempatkan kentang goreng yang sudah digoreng di atas piring atau mangkuk. Taburkan keju curd di atas kentang goreng, lalu siram dengan kuah panas.<br>
+                    5. <b>Sajikan:</b> Sajikan segera agar keju curd tetap lembut dan kuahnya hangat. Nikmati poutine selagi panas.<br>
+                </p>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

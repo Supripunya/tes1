@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - MasakDlu</title>
+    <link rel="stylesheet" href="../css/styledetailresep.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html"class="active">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <div class="image-food">
+            <img src="../img/dimsum.jpeg" alt="image-food" >
+            <div class="recipe-card" data-title="Dimsum">
+                <h3>Dimsum</h3>
+                <p>
+                    <h4>Bahan-bahan</h4>
+                    Untuk kulit:<br>
+                    1 cangkir tepung tang mien (tepung pati gandum)<br>
+                    1/2 cangkir tepung tapioka<br>
+                    3/4 cangkir air mendidih<br>
+                    1 sendok makan minyak goreng<br>
+                    Untuk isian:<br>
+                    250 gram udang, kupas dan cincang kasar<br>
+                    50 gram bambu muda, cincang halus<br>
+                    1 sendok teh kecap asin<br>
+                    1 sendok teh minyak wijen<br>
+                    1 sendok teh gula<br>
+                    1/2 sendok teh garam<br>
+                    1/2 sendok teh lada putih<br>
+                    1 sendok makan tepung tapioka<br>
+                    <h4>Instruksi</h4>
+                    1. <b>Siapkan Isian:</b> Campurkan udang cincang, bambu muda, kecap asin, minyak wijen, gula, garam, lada putih, dan tepung tapioka dalam mangkuk. Aduk hingga semua bahan tercampur rata. Simpan di dalam kulkas.<br>
+                    2. <b>Buat Kulit Dumpling:</b><br>
+                    3. Campurkan tepung tang mien dan tepung tapioka dalam mangkuk besar.<br>
+                    4. Tambahkan air mendidih secara perlahan sambil diaduk hingga menjadi adonan yang halus.<br>
+                    5. Tambahkan minyak goreng dan uleni adonan hingga kalis.<br>
+                    6. Bungkus adonan dengan plastik wrap dan biarkan selama 15 menit agar lebih mudah dibentuk.<br>
+                    7. <b>Bentuk Dumpling:</b><br>
+                    8. Gulung adonan menjadi batang panjang, lalu potong menjadi potongan kecil seukuran bola golf.<br>
+                    9. Giling setiap potongan menjadi lingkaran tipis dengan rolling pin.<br>
+                    10. Ambil sekitar 1 sendok teh isian udang dan letakkan di tengah lingkaran adonan.<br>
+                    11. Lipat adonan dan bentuk seperti bulan sabit, tekan tepi-tepi untuk menutup rapat. Buat lipatan di tepi untuk tampilan lebih estetis.<br>
+                    12. <b>Kukus Dumpling:</b><br>
+                    14. Letakkan dumpling di atas kertas baking atau daun pisang di dalam kukusan.<br>
+                    15. Kukus dumpling selama sekitar 6-8 menit hingga kulit menjadi transparan dan udang matang.<br>
+                    16. Sajikan dimsum udang hangat dengan saus sambal atau kecap asin.<br>
+                </p>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

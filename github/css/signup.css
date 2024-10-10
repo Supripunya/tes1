@@ -1,0 +1,79 @@
+/* Add styles for the login and signup pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4EEE0;
+}
+
+header {
+    background: radial-gradient(circle 560px at 50% 70%, #6D5D6E, #4F4557, #393646);
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+.login, .signup {
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+.login h2, .signup h2 {
+    color: #333;
+}
+
+.login form, .signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login label, .signup label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.login input, .signup input {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: radial-gradient(circle 560px at 50% 70%, #6D5D6E, #4F4557, #393646);
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+p {
+    margin-top: 1em;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}

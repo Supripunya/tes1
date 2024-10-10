@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - MasakDlu</title>
+    <link rel="stylesheet" href="../css/styledetailresep.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html"class="active">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <div class="image-food">
+            <img src="../img/tacos.jpeg" alt="image-food" >
+            <div class="recipe-card" data-title="Tacos">
+                <h3>Tacos</h3>
+                <p>
+                    <h4>Bahan-bahan</h4>
+                    8 tortilla jagung atau gandum<br>
+                    500 gram daging sapi cincang<br>
+                    1 bawang bombay, cincang halus<br>
+                    3 siung bawang putih, cincang halus<br>
+                    1 sendok makan minyak zaitun<br>
+                    1 sendok teh bubuk cabai<br>
+                    1 sendok teh jintan bubuk<br>
+                    1/2 sendok teh paprika<br>
+                    1/2 sendok teh oregano<br>
+                    Garam dan merica secukupnya<br>
+                    Selada, cincang<br>
+                    Tomat, potong dadu<br>
+                    Keju cheddar, parut<br>
+                    Krim asam (sour cream)<br>
+                    Saus salsa<br>
+                    Irisan jalapeño (opsional)<br>
+                    Perasan jeruk nipis<br>
+                    <h4>Instruksi</h4>
+                    1. <b>Masak Daging Sapi:</b> Panaskan minyak zaitun di atas wajan besar dengan api sedang. Tumis bawang bombay dan bawang putih hingga harum dan lembut.<br>
+                    2. <b>Tambahkan Daging Sapi:</b> Masukkan daging sapi cincang ke dalam wajan. Masak hingga daging berubah warna dan matang sepenuhnya. Tiriskan lemak berlebih.<br>
+                    3. <b>Bumbui Daging:</b> Tambahkan bubuk cabai, jintan, paprika, oregano, garam, dan merica ke dalam daging. Aduk rata dan masak selama beberapa menit hingga bumbu meresap.<br>
+                    4. <b>Panaskan Tortilla:</b> Panaskan tortilla di atas wajan atau langsung di atas api kompor hingga sedikit menggelembung dan hangat. Jangan biarkan terlalu lama agar tidak menjadi keras.<br>
+                    5. <b>Rakit Tacos:</b> Letakkan daging sapi berbumbu di atas tortilla. Tambahkan selada cincang, tomat potong dadu, keju parut, krim asam, dan saus salsa. Tambahkan irisan jalapeño jika suka.<br>        
+                    6. <b>Tambahkan Perasan Jeruk Nipis:</b> Untuk sentuhan ekstra, tambahkan sedikit perasan jeruk nipis di atas taco sebelum disajikan.
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

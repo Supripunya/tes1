@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MasakDlu</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MasakDlu</div>
+        <div class="Masak">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="halaman resep.html">Recipes</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="contact" class="active">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        masak = document.querySelector(".Masak");
+        masak.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <main>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>
+                Welcome to MasakDlu!<br>
+                At MasakDlu, we believe in the joy of cooking and the magic of a home-cooked meal. Founded in 2024, our mission is to inspire and empower people to explore the culinary arts, whether you're a seasoned chef or just starting your culinary journey.<br>
+                Our Story<br>
+                Born from a passion for cooking and a desire to bring people together through food, MasakDlu is your go-to source for delicious recipes, cooking tips, and culinary inspiration. We are committed to helping you discover new flavors, master cooking techniques, and create memorable meals for your loved ones.<br>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MasakDlu. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
